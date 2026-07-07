@@ -19,6 +19,11 @@
     font-weight: 700;
 }
 
+.preLine {
+    /* To make paragraph respects line breaks in myAbout file */
+    white-space: pre-line;
+}
+
 .disabledInLg {
     display: none;
 }
