@@ -1,5 +1,6 @@
 // Links
-import { whatsapp, facebook, linkedin, github, main, projects, name, imageProfile } from "../../store/info.js";
+import { accounts, main, projects, name, imageProfile, work } from "../../store/info.js";
+import { SocialLinks } from "../../utilities/Social-links.jsx";
 import { bgMain, mainSection, mainTextWrapper, mainIntroSpan, mainTitle, mainSubtitle, 
     mainSocialLinks, mainAvatar, btnSuccess } from "./styles.module.css";
 
@@ -10,13 +11,9 @@ function Main() {
                 <div className={mainTextWrapper}>
                     <p><span className={mainIntroSpan}>Hi there, I'm</span></p>
                     <h1 className={mainTitle}>{name}</h1>
-                    <p className={mainSubtitle}>Front-end developer</p>
+                    <p className={mainSubtitle}>{work}</p>
                     <div className={mainSocialLinks}>
-                        <a target="_blank" href={whatsapp}><i className="fa-brands fa-square-whatsapp" /></a>
-                        <a target="_blank" href={facebook}><i className="fa-brands fa-facebook" /></a>
-                        <a target="_blank" href={linkedin}><i className="fa-brands fa-linkedin" /></a>
-                        <a target="_blank" href={github}><i className="fa-brands fa-github" /></a>
-                        {/* <a target="_blank" href={youtube}><i className="fa-brands fa-youtube" /></a> */}
+                        {SocialLinks(accounts)}
                     </div>
                     <a href={projects} className={`btn btn-success ${btnSuccess}`}>My Work <i className="fa-solid fa-circle-arrow-down" /></a>
                 </div>

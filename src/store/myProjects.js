@@ -1,4 +1,4 @@
-import { github } from "./info";
+import { accounts } from "./info.js";
 import myProject1 from "../assets/myProject1.png";
 import myProject2 from "../assets/myProject2.png";
 
@@ -10,7 +10,7 @@ export const myProjects = [
         image: myProject1,
         liveLink: "Not_Deployed_Yet",
         isRepoAvailable: true,
-        repoLink: `${github}/E-Commerce_Front`
+        repoLink: `${accounts.github.link}/E-Commerce_Front`
     },
     {
         title: "Finance Tracker",
@@ -19,6 +19,6 @@ export const myProjects = [
         image: myProject2,
         liveLink: "https://finance-tracker-abdallah.vercel.app",
         isRepoAvailable: true,
-        repoLink: `${github}/Finance_Tracker`
+        repoLink: `${accounts.github.link}/Finance_Tracker`
     }
 ]

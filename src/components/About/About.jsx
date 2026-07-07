@@ -10,8 +10,10 @@ function About() {
             <div className="row">
                 <div className="col-lg-8 col-sm-12">
                     <h3 className={mainHeading}>I'm <span className={highlight}>{name},</span> a web developer</h3>
-                    <p>I'm a front-end developer experienced in HTML, CSS, JavaScript, Bootstrap and React. <br />
-                        I focus on creating responsive layouts, interactive designs, and smooth user experiences that make websites both functional and attractive.</p>
+                    <p>
+                        I'm a front-end developer experienced in HTML, CSS, JavaScript, Bootstrap and React. <br />
+                        I focus on creating responsive layouts, interactive designs, and smooth user experiences that make websites both functional and attractive.
+                    </p>
                     <h4 className={aboutEducationTitle}>Education</h4>
                     <p>Faculty of Computers and Information, Beni-Suef University (2023 – 2027)</p>
                 </div>

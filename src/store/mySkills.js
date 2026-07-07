@@ -7,6 +7,5 @@ export const mySkills = [
     { name: "Tailwind", icon: "fa-solid fa-wind" },
     // { name: "Tailwind", icon: "fa-brands fa-tailwind-css" },
     { name: "React", icon: "fa-brands fa-react" },
-    // { name: "Next.js", icon: "fa-solid fa-n" },
     { name: "Git & GitHub", icon: "fa-brands fa-github" },
 ];
