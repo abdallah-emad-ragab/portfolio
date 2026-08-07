@@ -1,4 +1,4 @@
-import { about, age, email, name, place } from "../../store/info";
+import { about, age, email, name, address } from "../../store/info";
 import { education, work_about, work_details } from "../../store/myAbout";
 import { aboutSection, aboutTitle, mainHeading, highlight, aboutEducationTitle, disabledInLg, preLine } from "./styles.module.css";
 
@@ -23,7 +23,7 @@ function About() {
                     <hr />
                     <p><b>Email</b> : {email}</p>
                     <hr />
-                    <p><b>Place</b> : {place}</p>
+                    <p><b>Address</b> : {address}</p>
                     <hr />
                 </div>
             </div>

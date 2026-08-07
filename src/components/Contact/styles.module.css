@@ -1,6 +1,9 @@
+/* 
+    Base Styles for Contact Section
+*/
 .contactSection {
     background-color: var(--bg-primary);
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 .contactTitle {
@@ -11,12 +14,46 @@
     color: var(--secondary-color);
 }
 
+/* Tabs Wrapper */
+.tabsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.tabBtn {
+    background-color: transparent;
+    color: var(--gray);
+    border: 2px solid var(--gray);
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tabBtn:hover {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.activeTab {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+    border-color: var(--secondary-color) !important;
+}
+
+/* 
+    // Contact Form Styles //
+*/
+
 .formWrapper {
     background-color: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: var(--card-shadow);
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -95,6 +132,55 @@
     z-index: 1980;
     animation: fadeIn 0.3s ease;
 }
+/* // End of Contact Form Styles // */
+
+/* 
+    // Freelance Section //
+*/
+
+/* Freelance Cards Grid */
+.freelanceWrapper {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.freelanceCard {
+    background-color: var(--bg-primary);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px var(--card-shadow);
+}
+
+.freelanceCard:hover {
+    transform: translateY(-3px);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.platformTitle {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.platformDesc {
+    font-size: 0.85rem;
+    color: var(--gray);
+    margin: 3px 0 0 0;
+}
+/* // End of Freelance Section // */
+
+
+/* 
+    // Animations //
+*/
 
 @keyframes popup {
     from { opacity: 0; transform: translate(-50%, -60%) scale(0.9); }

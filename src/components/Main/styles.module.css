@@ -66,6 +66,13 @@
     object-fit: cover;
 }
 
+.buttonsGroup {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap !important;
+}
+
 .btnSuccess {
     background-color: var(--secondary-color) !important;
     border: none !important;
@@ -75,6 +82,19 @@
 
 .btnSuccess:hover {
     background-color: var(--btnSuccess-hover) !important;
+}
+
+.btnOutlineSuccess {
+    color: var(--secondary-color) !important;
+    border: 2px solid var(--secondary-color) !important;
+    padding: 10px 25px !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+}
+
+.btnOutlineSuccess:hover {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
 }
 
 @media (max-width: 991px) {
@@ -99,7 +119,16 @@
         margin-bottom: 2rem !important;
     }
 
+    .buttonsGroup {
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 8px !important;
+    }
+
+    .btnOutlineSuccess, 
     .btnSuccess {
+        padding: 8px 14px !important;
+        font-size: 0.85rem !important;
         margin-bottom: 2rem !important;
     }
 }

@@ -1,9 +1,9 @@
 .customHeader {
     background-color: #fff !important;
     border-bottom: 1px solid #ccc;
-    padding: 5px 2rem 3px;
+    padding: 3px 2rem;
     transition: all 0.3s ease-in-out;
-    position: fixed;
+    position: fixed !important;
     top: 0;
     width: 100%;
     z-index: 999;

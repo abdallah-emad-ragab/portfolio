@@ -2,6 +2,7 @@ import { useState } from "react";
 
 function useContact() {
     const [contactAlert, setContactAlert] = useState({ text: "", type: "" });
+    const [activePannel, setActivePannel] = useState("form");
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -31,7 +32,7 @@ function useContact() {
         }
     };
 
-    return { contactAlert, handleSubmit };
+    return { contactAlert, handleSubmit, activePannel, setActivePannel };
 }
 
 export default useContact;
