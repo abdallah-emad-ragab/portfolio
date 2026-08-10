@@ -1,12 +1,12 @@
-import { skills } from "../../store/info";
+import { skills } from "../../data/info";
 import { skillsSection, skillsTitle, skillsGrid, skilledCard, skillIcon } from "./styles.module.css";
-import { mySkills } from "../../store/mySkills";
+import { mySkills } from "../../data/mySkills";
 
 function Skills() {
     return (
         <section id={skills.split("#")[1]} className={skillsSection}>
             <div className="container">
-                <div className="text-center">
+                <div className="text-center mb-3">
                     <h2 className={`sections-title ${skillsTitle}`}>
                         <i className="fa-solid fa-laptop-code me-2" /> 
                         Skills & <span>Abilities</span>

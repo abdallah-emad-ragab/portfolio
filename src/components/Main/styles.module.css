@@ -1,6 +1,10 @@
+/* ==========================================
+    Hero Section Layout & Background
+========================================== */
 .bgMain {
     background-color: var(--bg-primary);
-    height: 100vh;
+    min-height: 100vh;
+    /* Using min-height prevents navbar overlap on small screens */
     display: flex;
     align-items: center;
 }
@@ -9,8 +13,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
+/* ==========================================
+    Text Typography & Styles
+========================================== */
 .mainTextWrapper {
     letter-spacing: 2px;
 }
@@ -35,6 +43,9 @@
     margin-bottom: 1.5rem;
 }
 
+/* ==========================================
+    Social Icons Styling
+========================================== */
 .mainSocialLinks {
     margin-bottom: 1.5rem;
 }
@@ -51,19 +62,29 @@
     width: 40px;
     height: 40px;
     margin-right: 10px;
-    transition: 0.5s ease;
+    transition: transform 0.3s ease;
 }
 
 .mainSocialLinks a i:hover {
     transform: scale(0.85);
 }
 
+/* Profile Image Styling */
 .mainAvatar {
     width: 450px;
     height: 450px;
     border-radius: 50%;
     box-shadow: 0 0 20px var(--card-shadow);
     object-fit: cover;
+}
+
+/* ==========================================
+    Call To Action (CTA) Buttons Group
+========================================== */
+.ctaContainer {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .buttonsGroup {
@@ -73,23 +94,37 @@
     flex-wrap: nowrap !important;
 }
 
+/* Common Styles for All CTA Buttons */
+.btnSuccess,
+.btnOutlineSuccess,
+.cvBtn {
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s ease !important;
+    padding: 10px 20px !important;
+}
+
+/* Primary Filled Button */
 .btnSuccess {
     background-color: var(--secondary-color) !important;
-    border: none !important;
-    padding: 10px 25px !important;
-    font-weight: 600 !important;
+    border: 2px solid var(--secondary-color) !important;
+    color: white !important;
 }
 
 .btnSuccess:hover {
     background-color: var(--btnSuccess-hover) !important;
+    border-color: var(--btnSuccess-hover) !important;
 }
 
+/* Secondary Outlined Button */
 .btnOutlineSuccess {
+    background-color: transparent !important;
     color: var(--secondary-color) !important;
     border: 2px solid var(--secondary-color) !important;
-    padding: 10px 25px !important;
-    font-weight: 600 !important;
-    white-space: nowrap !important;
 }
 
 .btnOutlineSuccess:hover {
@@ -97,15 +132,33 @@
     color: white !important;
 }
 
+/* Full Width CV Button */
+.cvBtn {
+    width: 100%;
+    background-color: transparent !important;
+    color: var(--secondary-color) !important;
+    border: 2px solid var(--secondary-color) !important;
+}
+
+.cvBtn:hover {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+}
+
+/* ==========================================
+    Responsive Breakpoints (Mobile & Tablets)
+========================================== */
 @media (max-width: 991px) {
     .bgMain {
-        margin-top: 50px;
+        /* Adequate top padding to prevent fixed navbar from overlapping content */
+        padding-top: 90px;
+        padding-bottom: 40px;
+        height: auto;
     }
 
     .mainSection {
         flex-direction: column-reverse;
         text-align: center;
-        padding: 20px 0;
     }
 
     .mainTitle {
@@ -115,20 +168,26 @@
     .mainAvatar {
         width: 250px;
         height: 250px;
-        margin-top: 2rem !important;
-        margin-bottom: 2rem !important;
+        margin-top: 1rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .ctaContainer {
+        align-items: center;
+        margin-bottom: 2rem;
+        /* Adds safe spacing at the bottom of the section */
     }
 
     .buttonsGroup {
         justify-content: center !important;
-        align-items: center !important;
         gap: 8px !important;
     }
 
-    .btnOutlineSuccess, 
-    .btnSuccess {
+    /* Smaller paddings for mobile devices */
+    .btnOutlineSuccess,
+    .btnSuccess,
+    .cvBtn {
         padding: 8px 14px !important;
         font-size: 0.85rem !important;
-        margin-bottom: 2rem !important;
     }
 }

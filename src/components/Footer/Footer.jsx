@@ -1,4 +1,4 @@
-import { name, about, contact, main, projects, skills, accounts } from "../../store/info";
+import { name, about, contact, main, projects, skills, accounts } from "../../data/info";
 import { SocialLinks } from "../../utilities/Social-links";
 import { 
     footer, footerBrand, footerDesc, footerTitle, 

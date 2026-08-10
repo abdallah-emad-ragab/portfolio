@@ -1,6 +1,6 @@
 import useContact from "../../hooks/useContact";
-import { contact, submitKey } from "../../store/info";
-import { freelancePlatforms } from "../../store/myFreelance";
+import { contact, submitKey } from "../../data/info";
+import { freelancePlatforms } from "../../data/myFreelance";
 import { contactSection, contactTitle, formWrapper, formLabel, inputField, submitBtn,
     statusMessage, statusSuccess, statusError, backdrop,
     freelanceWrapper, freelanceCard, platformTitle, platformDesc

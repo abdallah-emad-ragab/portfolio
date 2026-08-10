@@ -1,5 +1,5 @@
-import { projects } from "../../store/info";
-import { myProjects } from "../../store/myProjects";
+import { projects } from "../../data/info";
+import { myProjects } from "../../data/myProjects";
 import {
     projectsSection, cardCollection, projectCard, imgWrapper,
     projectImg, cardBody, projectTitle, projectDesc,

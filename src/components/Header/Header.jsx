@@ -1,4 +1,4 @@
-import { about, contact, main, name, projects, services, skills } from "../../store/info";
+import { about, contact, main, name, projects, services, skills } from "../../data/info";
 import { customHeader, headerLogo, navLinks } from "./styles.module.css";
 
 function Header() {

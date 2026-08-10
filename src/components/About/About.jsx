@@ -1,5 +1,5 @@
-import { about, age, email, name, address } from "../../store/info";
-import { education, work_about, work_details } from "../../store/myAbout";
+import { about, age, email, name, address } from "../../data/info";
+import { education, work_about, work_details } from "../../data/myAbout";
 import { aboutSection, aboutTitle, mainHeading, highlight, aboutEducationTitle, disabledInLg, preLine } from "./styles.module.css";
 
 function About() {

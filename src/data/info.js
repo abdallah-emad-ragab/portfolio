@@ -1,4 +1,5 @@
 import profileImage from "../assets/me.png";
+import myCV from "/MyCV.pdf";
 
 // Navigations
 export const main = "";
@@ -25,6 +26,7 @@ export const email = "abdallahemad9876@gmail.com";
 export const address = "Cairo - Egypt";
 export const work = "Front-end developer";
 export const imageProfile = profileImage;
+export const cv = myCV;
 
 // Links
 export const accounts = {

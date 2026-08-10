@@ -1,9 +1,9 @@
-import { services } from "../../store/info";
+import { services } from "../../data/info";
 import { 
     servicesSection, servicesTitle, cardCollection, 
     serviceCard, serviceIcon, serviceTitleText 
 } from "./styles.module.css";
-import { myServices } from "../../store/myServices";
+import { myServices } from "../../data/myServices";
 
 function Services() {
     return (
