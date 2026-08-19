@@ -12,7 +12,7 @@ import { useEffect } from "react";
 function App() {
   useEffect(() => {
     document.title = pageTitle;
-  }, [pageTitle]);
+  }, []);
   return (
     <>
       <Header />

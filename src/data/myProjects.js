@@ -6,12 +6,12 @@ import EducationalPlatformImage from "../assets/MyProjects/Educational-Platform.
 export const myProjects = [
     {
         title: "E-Commerce",
-        description: "A simple full-stack e-commerce website that allows users to browse products, with user-friendly UI, backend functionality and strong logic to ensure a smooth shopping experience.",
-        technologies: ["React", "TypeScript", "Bootstrap", "Redux Toolkit", "React Hook Form", "Zod"],
+        description: "A responsive e-commerce platform with real-time search, category filters, and live stock tracking. Features cart and wishlist management with full auth workflows.",
+        technologies: ["React", "TypeScript", "Redux Toolkit", "React Router", "Bootstrap", "Local Storage", "React Hook Form", "Zod"],
         image: eCommerceImage,
-        liveLink: "Not_Deployed_Yet",
+        liveLink: "https://e-commerce-abdallah.vercel.app/",
         isRepoAvailable: true,
-        repoLink: `${accounts.github.link}/E-Commerce_Front`
+        repoLink: `${accounts.github.link}/E-Commerce`
     },
     {
         title: "Educational Platform",

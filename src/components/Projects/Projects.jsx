@@ -51,14 +51,14 @@ function Projects() {
                                     )}
 
                                     {/* Live Link */}
-                                    {project.liveLink.includes("Not_Deployed_Yet") ? (
-                                        <span className={repoDisabled} title="This project is under development">
-                                            <i className="fa-solid fa-hourglass-start me-1"></i> Coming Soon
-                                        </span>
-                                    ) : (
+                                    {project.liveLink.includes(".") ? (
                                         <a href={project.liveLink} target="_blank" rel="noreferrer" className={visitLink}>
                                             Visit Website <i className="fa-solid fa-arrow-up-right-from-square ms-1" style={{ fontSize: '12px' }}></i>
                                         </a>
+                                    ) : (
+                                        <span className={repoDisabled} title="This project is under development">
+                                            <i className="fa-solid fa-hourglass-start me-1"></i> {project.liveLink}
+                                        </span>
                                     )}
                                 </div>
                             </div>
