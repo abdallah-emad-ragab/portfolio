@@ -6,8 +6,8 @@ import EducationalPlatformImage from "../assets/MyProjects/Educational-Platform.
 export const myProjects = [
     {
         title: "E-Commerce",
-        description: "A responsive e-commerce platform with real-time search, category filters, and live stock tracking. Features cart and wishlist management with full auth workflows.",
-        technologies: ["React", "TypeScript", "Redux Toolkit", "React Router", "Bootstrap", "Local Storage", "React Hook Form", "Zod"],
+        description: "A full-featured e-commerce platform simulating a full-stack architecture on the client side. Includes auth flows, protected routes, stock tracking, cart/wishlist management, and order history with isolated user data via LocalStorage.",
+        technologies: ["React", "TypeScript", "Redux Toolkit", "React Router DOM", "Bootstrap", "Local Storage", "React Hook Form", "Zod"],
         image: eCommerceImage,
         liveLink: "https://e-commerce-abdallah.vercel.app/",
         isRepoAvailable: true,
@@ -16,7 +16,7 @@ export const myProjects = [
     {
         title: "Educational Platform",
         description: "An interactive e-learning platform that allows users to explore courses, filter by categories, view detailed curriculums, and manage course enrollments using a streamlined cart and purchase workflow.",
-        technologies: ["React", "Redux Toolkit", "React Router", "Bootstrap", "Local Storage"],
+        technologies: ["React", "Redux Toolkit", "React Router DOM", "Bootstrap", "Local Storage"],
         image: EducationalPlatformImage,
         liveLink: "https://educational-platform-abdallah.vercel.app",
         isRepoAvailable: true,
